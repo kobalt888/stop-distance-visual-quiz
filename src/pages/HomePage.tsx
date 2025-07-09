@@ -10,7 +10,7 @@ export default function HomePage() {
 
   return (
     <Fade in={showContent} timeout={700}>
-      <Container maxWidth="lg" sx={{ mt: { xs: 4, sm: 8 } }}>
+      <Container maxWidth="lg" sx={{ mt: { xs: 0, sm: 4 } }}>
         <Typography variant='h3' component="h1" gutterBottom>
           Stopping Distance
         </Typography>
