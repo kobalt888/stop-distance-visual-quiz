@@ -21,7 +21,7 @@ export default function ThankYouPage() {
         flexDirection: 'column',
         alignItems: 'stretch',
         gap: 3,
-        height: isMobile ? '100vh' : 'auto',
+        height: 'auto',
         overflow: 'auto',
         justifyContent: 'flex-start',
       }}>
