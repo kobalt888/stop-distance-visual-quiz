@@ -17,7 +17,7 @@ export default function HomePage() {
         <Typography variant='h4' component="p">
           How speed drives safety on the road
         </Typography>
-        <Box sx={{ width: '100%', maxWidth: 700, mb: 4, display: 'flex', justifyContent: 'center' }}>
+        <Box sx={{ width: '100%', maxWidth: 700, mb: 2, display: 'flex', justifyContent: 'center' }}>
           <LottieAnimation animationData={truckAnimation} loop={true} style={{ width: '100%', height: 'auto' }} onLoaded={() => setShowContent(true)} />
         </Box>
         <Stack direction="row" spacing={3}>
