@@ -1,17 +1,16 @@
 import { Box, Container, Stack, Typography, Button, LottieAnimation } from '../components/atoms';
 import truckAnimation from '../media/lottie/truckOnHighway.json';
-import { useTheme, useMediaQuery, Fade } from '@mui/material';
+import { Fade } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 export default function HomePage() {
-  const theme = useTheme();
   const navigate = useNavigate();
   const [showContent, setShowContent] = useState<boolean>(false);
 
   return (
     <Fade in={showContent} timeout={700}>
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" sx={{ mt: { xs: 4, sm: 8 } }}>
         <Typography variant='h3' component="h1" gutterBottom>
           Stopping Distance
         </Typography>

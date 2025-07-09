@@ -42,7 +42,7 @@ export default function RoadBar({ barHeight }: RoadBarProps) {
               width: '1%',
               height: '100%',
               bgcolor: '#fff',
-              borderRadius: 1,
+              borderRadius: 0,
               opacity: 0.7,
             }}
           />

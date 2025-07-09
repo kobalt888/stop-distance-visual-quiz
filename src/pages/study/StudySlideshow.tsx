@@ -45,20 +45,22 @@ export default function StudySlideshow() {
             position: 'relative',
             width: isMobile ? '100vw' : '100%',
             maxWidth: isMobile ? '100vw' : 900,
-            minHeight: isMobile ? '100vh' : '60vh',
+            minHeight: isMobile ? undefined : '60vh',
             mx: isMobile ? 0 : 'auto',
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: isMobile ? 'flex-start' : 'center',
+            alignItems: 'stretch',
+            justifyContent: 'flex-start',
             px: isMobile ? 2 : 4,
             pt: 0,
             pb: isMobile ? 12 : 0,
-            height: isMobile ? '100%' : '70vh', // changed from '100vh' to '100%' for mobile
+            height: isMobile ? '100vh' : '70vh',
             bgcolor: '#f3f4f6',
             borderRadius: 2,
             boxShadow: 2,
             overflow: 'auto',
+            mt: isMobile ? 0 : 6,
+            maxHeight: isMobile ? 'calc(100dvh - 48px)' : 'none',
           }}
         >
           <Box sx={{
@@ -96,7 +98,7 @@ export default function StudySlideshow() {
             )}
           </Box>
           {/* Navigation buttons bottom center */}
-          <Stack direction="row" spacing={2} sx={{ position: 'absolute', bottom: 24, left: '50%', transform: 'translateX(-50%)', zIndex: 1 }}>
+          <Stack direction="row" spacing={2} sx={{ position: 'absolute', bottom: 48, left: '50%', transform: 'translateX(-50%)', zIndex: 1 }}>
             <Tooltip title="Previous Slide" placement="top" arrow>
               <span>
                 <Button onClick={() => handleNav('prev')} disabled={index === 0} size="small" variant="outlined" sx={{ minWidth: 32, minHeight: 32, p: 0.5, opacity: 0.7, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
