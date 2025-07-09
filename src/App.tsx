@@ -20,7 +20,7 @@ function AppRoutes() {
 export default function App() {
   return (
     <AppThemeProvider>
-      <Router>
+      <Router basename="/stop-distance-visual-quiz">
         <AppRoutes />
       </Router>
     </AppThemeProvider>
