@@ -55,7 +55,7 @@ export default function QuizPage() {
   return (
     <>
       <PageHeader title="Quiz" />
-      <Box sx={{ maxWidth: 600, mx: 'auto', mt: 6, p: 3, bgcolor: '#f3f4f6', borderRadius: 1, boxShadow: 2, height: isMobile ? '100vh' : 'auto', overflowY: 'auto' }}>
+      <Box sx={{ maxWidth: 600, mx: 'auto', mt: 0, p: 3, bgcolor: '#f3f4f6', borderRadius: 1, boxShadow: 2, height: isMobile ? '100vh' : 'auto', overflowY: 'auto' }}>
         <Typography variant="h5" sx={{ mb: 2 }}>{question.question}</Typography>
         <Stack spacing={2}>
           {question.options.map((opt, i) => (
